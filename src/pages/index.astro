@@ -1,0 +1,40 @@
+---
+import "../styles/global.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "../components/Navbar.astro";
+
+const title = "Xelleq";
+const description = "Xelleq";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph (for sharing on social media) -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <!-- Optional: <meta property="og:image" content="/social-preview.png" /> -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <link rel="icon" type="image/x-icon" href="../../public/favicon.ico" />
+  </head>
+  <body>
+    <Navbar />
+
+    <div class="container mt-4 mb-4">
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  </body>
+</html>

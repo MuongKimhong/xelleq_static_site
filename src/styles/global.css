@@ -1,0 +1,51 @@
+.page-title {
+    color: #2080f0;
+    text-align: center;
+}
+.navbar-item {
+    cursor: pointer;
+}
+.navbar-item:hover {
+    color: #2080f0;
+}
+
+* {
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(32, 128, 240, 0.4);
+    border-radius: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: transparent;
+  }
+}
+
+*,
+*::before,
+*::after {
+  font-weight: normal;
+}
+
+body {
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
