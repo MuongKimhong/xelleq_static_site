@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../components/Navbar.astro";
 
 const title = "Xelleq";
-const description = "Xelleq";
+const description = "Create, Connect & Share, all in one place.";
 ---
 
 <html lang="en">
@@ -26,14 +26,49 @@ const description = "Xelleq";
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
 
-    <link rel="icon" type="image/x-icon" href="../../public/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   </head>
   <body>
     <Navbar />
 
-    <div class="container mt-4 mb-4">
+    <div class="container mt-4 mb-4" style="
 
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    height: 80vh
+    ">
+        <h1 class="mt-4" style="text-align: center; ">
+            <span style="color: #2080f0; font-weight: bold;">Xelleq</span>,
+            platform that combines forums, real-time chat, and file sharing in server-based spaces.
+            <span style="
+                background: linear-gradient(to right, #a8e6cf, #2080f0);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: inline-block;
+                font-weight: bold;
+            ">
+                Create, Connect & Share, all in one place.
+            </span>
+        </h1>
+
+        <div class="mt-4">
+            <button type="button" class="btn btn-secondary" id="redirect-btn">
+                Start Connecting
+            </button>
+        </div>
     </div>
+
+    <script>
+      function redirectMainSite() {
+        window.open("https://xelleq.com", "_blank")
+      }
+
+      let btn = document.getElementById("redirect-btn")
+      if (btn) {
+        btn.onclick = () => {
+          redirectMainSite()
+        }
+      }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 
